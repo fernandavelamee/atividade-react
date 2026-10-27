@@ -1,0 +1,67 @@
+.dropdown {
+  position: relative;
+  min-width: 170px;
+}
+.trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  width: 100%;
+  min-height: 58px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--ink);
+  padding: 0.55rem 0.9rem;
+  text-align: left;
+  font-size: 0.85rem;
+}
+.label {
+  display: block;
+  color: var(--muted);
+  font-size: 0.65rem;
+  margin-bottom: 2px;
+  letter-spacing: 0.04em;
+}
+.open {
+  border-color: var(--green);
+}
+.menu {
+  position: absolute;
+  z-index: 30;
+  top: calc(100% + 8px);
+  right: 0;
+  width: max-content;
+  min-width: 100%;
+  max-width: min(280px, 90vw);
+  list-style: none;
+  padding: 6px;
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 12px 35px #183a3420;
+}
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 0;
+  border-radius: 7px;
+  color: var(--ink);
+  background: none;
+  width: 100%;
+  text-align: left;
+  padding: 0.75rem;
+  font-size: 0.85rem;
+}
+.option:hover,
+.option:focus-visible {
+  background: var(--sage);
+  outline-offset: -2px;
+}
+.option[aria-selected="true"] {
+  font-weight: 700;
+}

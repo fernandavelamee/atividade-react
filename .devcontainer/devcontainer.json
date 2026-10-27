@@ -1,0 +1,21 @@
+{
+  "name": "Atividade React - Forma",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-24-bookworm",
+  "forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": {
+      "label": "Aplicação React",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postCreateCommand": "npm ci",
+  "customizations": {
+    "vscode": {
+      "extensions": ["MS-CEINTL.vscode-language-pack-pt-BR"],
+      "settings": {
+        "editor.tabSize": 2,
+        "files.insertFinalNewline": true
+      }
+    }
+  }
+}
